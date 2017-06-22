@@ -31,13 +31,3 @@
 ./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_DY_ZTT_SS.conf DYJetsToLL_M-50_13TeV-madgraphMLM_ZTT_SS 20 &
 ./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_DY_ZLL_SS.conf DYJetsToLL_M-10to50_13TeV-madgraphMLM_ZLL_SS 20 &
 ./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_DY_ZLL_SS.conf DYJetsToLL_M-50_13TeV-madgraphMLM_ZLL_SS 20 &
-
-
-# Estimate JES uncertainty
-for file in $(find -maxdepth 1 -type f -name "*.conf")
-do
-
-    echo $file
-    #sed -e 's/JetES = 0/JetES = 1/g' ${file}
-
-done
