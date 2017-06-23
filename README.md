@@ -14,10 +14,10 @@ source runAnalysis_topPtSys.sh
 source runAnalysis_zPtSys.sh   
 
 #### In order to check if jobs failed and in this case resubmit:
-source resubmit  
+./resubmit  
 
 #### To add all single root files to one together
-source hadd  
+./hadd  
 
 ##########################################
 #### To make some prefit plots (ad-hoc systematic uncertainties are included)
