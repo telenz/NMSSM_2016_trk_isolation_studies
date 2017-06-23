@@ -29,5 +29,5 @@ source makePlots.sh
 cd datacards   
 source runProducersAndCombine.sh   
 
-### To plot and fit all scale factors (you need to add them by hand to the script):
+#### To plot and fit all scale factors (you need to add them by hand to the script):
 root -l -b -q plotAndFitScaleFactors.C   
