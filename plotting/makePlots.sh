@@ -1,0 +1,91 @@
+#!bin/sh
+
+root -l -b -q PlotSamplesRatio.C"(\"mTH\",\"m_T(mu,met)\",\"Events\",100,0,40,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"mTH_2p5to5\",\"m_T(mu,met) (pt=2.5-5GeV)\",\"Events\",100,0,40,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"mTH_5to7p5\",\"m_T(mu,met) (pt=5-7.5GeV)\",\"Events\",100,0,40,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"mTH_7p5to10\",\"m_T(mu,met) (pt=7.5-10GeV)\",\"Events\",100,0,40,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"mTH_10to15\",\"m_T(mu,met) (pt=10-15GeV)\",\"Events\",100,0,40,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"mTH_15to20\",\"m_T(mu,met) (pt=15-20GeV)\",\"Events\",100,0,40,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"mTH_20toInf\",\"m_T(mu,met) (pt>20GeV)\",\"Events\",100,0,40,0,false,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"ptMuonH\",\"pTmuon\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"ptMuonH_2p5to5\",\"pTmuon (pt=2.5-5GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"ptMuonH_5to7p5\",\"pTmuon (pt=5-7.5GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"ptMuonH_7p5to10\",\"pTmuon (pt=7.5-10GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"ptMuonH_10to15\",\"pTmuon (pt=10-15GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"ptMuonH_15to20\",\"pTmuon (pt=15-20GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"ptMuonH_20toInf\",\"pTmuon (pt>20GeV)\",\"Events\",50,0,200,100,true,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"etaMuonH\",\"etamuon\",\"Events\",25,-2.5,+2.5,1,false,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"ptTrackH\",\"p_{T}^{track}\",\"Events\",20,0,200,10,true,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"ptTrackLowH\",\"p_{T}^{track}\",\"Events\",50,0,50,100,true,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"nCloseTrksH\",\"nTrks close-by (R<0.5)\",\"Number of tracks\",20,0,20,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"nCloseTrksH_2p5to5\",\"nTrks close-by (R<0.5) (pt=2.5-5GeV)\",\"Number of tracks\",20,0,20,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"nCloseTrksH_5to7p5\",\"nTrks close-by (R<0.5) (pt=5-7.5GeV)\",\"Number of tracks\",20,0,20,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"nCloseTrksH_7p5to10\",\"nTrks close-by (R<0.5) (pt=7.5-10GeV)\",\"Number of tracks\",20,0,20,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"nCloseTrksH_10to15\",\"nTrks close-by (R<0.5) (pt=10-15GeV)\",\"Number of tracks\",20,0,20,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"nCloseTrksH_15to20\",\"nTrks close-by (R<0.5) (pt=15-20GeV)\",\"Number of tracks\",20,0,20,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"nCloseTrksH_20toInf\",\"nTrks close-by (R<0.5) (pt>20GeV)\",\"Number of tracks\",20,0,20,0,false,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"invMassMuTrkH\",\"m_{trk,mu} [GeV]\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"invMassMuTrkH_2p5to5\",\"m_{trk,mu} [GeV]  (pt=2.5-5GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"invMassMuTrkH_5to7p5\",\"m_{trk,mu} [GeV]  (pt=5-7.5GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"invMassMuTrkH_7p5to10\",\"m_{trk,mu} [GeV]  (pt=7.5-10GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"invMassMuTrkH_10to15\",\"m_{trk,mu} [GeV] (pt=10-15GeV) \",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"invMassMuTrkH_15to20\",\"m_{trk,mu} [GeV] (pt=15-20GeV) \",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"invMassMuTrkH_20toInf\",\"m_{trk,mu} [GeV]  (pt>20GeV)\",\"Events\",50,0,200,100,true,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"metH\",\"MET [GeV]\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"metH_2p5to5\",\"MET [GeV] (pt=2.5-5GeV) \",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"metH_5to7p5\",\"MET [GeV] (pt=5-7.5GeV) \",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"metH_7p5to10\",\"MET [GeV] (pt=7.5-10GeV) \",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"metH_10to15\",\"MET [GeV]  (pt=10-15GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"metH_15to20\",\"MET [GeV]  (pt=15-20GeV)\",\"Events\",50,0,200,100,true,true)"
+root -l -b -q PlotSamplesRatio.C"(\"metH_20toInf\",\"MET [GeV] (pt>20GeV) \",\"Events\",50,0,200,100,true,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"dzetaH\",\"dzeta [GeV] \",\"Events\",50,0,-100,100,true,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonTrkH\",\"#Delta#Phi (#mu, trk) \",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonTrkH_2p5to5\",\"#Delta#Phi (#mu, trk) (pt=2.5-5GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonTrkH_5to7p5\",\"#Delta#Phi (#mu, trk) (pt=5-7.5GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonTrkH_7p5to10\",\"#Delta#Phi (#mu, trk) (pt=7.5-10GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonTrkH_10to15\",\"#Delta#Phi (#mu, trk) (pt=10-15GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonTrkH_15to20\",\"#Delta#Phi (#mu, trk) (pt=15-20GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonTrkH_20toInf\",\"#Delta#Phi (#mu, trk) (pt>20GeV)\",\"Events\",32,0,3.15,0,false,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonMetH\",\"#Delta#Phi (#mu, MET) \",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonMetH_2p5to5\",\"#Delta#Phi (#mu, met) (pt=2.5-5GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonMetH_5to7p5\",\"#Delta#Phi (#mu, met) (pt=5-7.5GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonMetH_7p5to10\",\"#Delta#Phi (#mu, met) (pt=7.5-10GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonMetH_10to15\",\"#Delta#Phi (#mu, met) (pt=10-15GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonMetH_15to20\",\"#Delta#Phi (#mu, met) (pt=15-20GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonMetH_20toInf\",\"#Delta#Phi (#mu, met) (pt>20GeV)\",\"Events\",32,0,3.15,0,false,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"dPhiTrkMetH\",\"#Delta#Phi (trk, MET) \",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiTrkMetH_2p5to5\",\"#Delta#Phi (trk, met) (pt=2.5-5GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiTrkMetH_5to7p5\",\"#Delta#Phi (trk, met) (pt=5-7.5GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiTrkMetH_7p5to10\",\"#Delta#Phi (trk, met) (pt=7.5-10GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiTrkMetH_10to15\",\"#Delta#Phi (trk, met) (pt=10-15GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiTrkMetH_15to20\",\"#Delta#Phi (trk, met) (pt=15-20GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiTrkMetH_20toInf\",\"#Delta#Phi (trk, met) (pt>20GeV)\",\"Events\",32,0,3.15,0,false,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonJetH\",\"#Delta#Phi (#mu, jet) \",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonJetH_2p5to5\",\"#Delta#Phi (#mu, jet) (pt=2.5-5GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonJetH_5to7p5\",\"#Delta#Phi (#mu, jet) (pt=5-7.5GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonJetH_7p5to10\",\"#Delta#Phi (#mu, jet) (pt=7.5-10GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonJetH_10to15\",\"#Delta#Phi (#mu, jet) (pt=10-15GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonJetH_15to20\",\"#Delta#Phi (#mu, jet) (pt=15-20GeV)\",\"Events\",32,0,3.15,0,false,true)"
+root -l -b -q PlotSamplesRatio.C"(\"dPhiMuonJetH_20toInf\",\"#Delta#Phi (#mu, jet) (pt>20GeV)\",\"Events\",32,0,3.15,0,false,true)"
+
+root -l -b -q PlotSamplesRatio.C"(\"nJetH\",\"# jets\",\"Events\",10,0,10,0,false,true)"
+
+
+#root -l -b -q PlotSamplesRatio.C"(\"muIdWeightH\",\"weight muID\",\"Events\",10,0,2.,1,false,true)"
+#root -l -b -q PlotSamplesRatio.C"(\"muTrigWeightH\",\"weight muTrig\",\"Events\",10,0,2.,1,false,true)"
+#root -l -b -q PlotSamplesRatio.C"(\"puWeightH\",\"PU weight\",\"Events\",25,0,5.,1,false,true)"
+#root -l -b -q PlotSamplesRatio.C"(\"etaTrackH\",\"eta^{track}\",\"Events\",25,-2.5,+2.5,1,false,true)"
+#root -l -b -q PlotSamplesRatio.C"(\"dzTrackH\",\"dz_{track}\",\"Events\",20,0,1,1,false,true)"
+#root -l -b -q PlotSamplesRatio.C"(\"dxyTrackH\",\"dxy_{track}\",\"Events\",20,0,1,1,false,true)"
