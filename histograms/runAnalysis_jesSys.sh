@@ -54,7 +54,7 @@ done
 ./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_DY_ZTT_${uncertainty}.conf DYJetsToLL_M-50_13TeV-madgraphMLM_ZTT_${uncertainty} 20 &
 ./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_DY_ZLL_${uncertainty}.conf DYJetsToLL_M-10to50_13TeV-madgraphMLM_ZLL_${uncertainty} 20 &
 ./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_DY_ZLL_${uncertainty}.conf DYJetsToLL_M-50_13TeV-madgraphMLM_ZLL_${uncertainty} 20 &
-./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_MC_${uncertainty}.conf QCD_Pt-20toInf_MuEnrichedPt20_13TeV_noTrig_${uncertainty} 20 &
+#./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_MC_${uncertainty}.conf QCD_Pt-20toInf_MuEnrichedPt20_13TeV_noTrig_${uncertainty} 20 &
 ./qsub_seq.sh analysis_macro_ztt analysisMacro_ztt_DATA_${uncertainty}.conf SingleMuon_Run2016_${uncertainty} 20 &
 
 # Estimate same sign region for QCD background
