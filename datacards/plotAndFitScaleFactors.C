@@ -37,6 +37,6 @@ void plotAndFitScaleFactors(){
 
   
 
-  canv1->SaveAs("TauIsolation_ScaleFactors.pdf");
+  canv1->SaveAs("figures/TauIsolation_ScaleFactors.pdf");
 
 }
