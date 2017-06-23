@@ -175,10 +175,10 @@ void DatacardProducer(TString ptRange = "2p5to5") {
   textFile << setw(15) << "zPt"     << setw(15) << "shape" << setw(20)   << "1.00"  << setw(20) << "-"     << setw(20) << "-"     << setw(20) << "-"     << setw(20) << "1.00"  << endl;
   textFile << setw(15) << "topPt"   << setw(15) << "shape" << setw(20)   << "-"     << setw(20) << "-"     << setw(20) << "-"     << setw(20) << "1.00"  << setw(20) << "-"     << endl;
 
-  textFile << "qcdScale rateParam ch1 qcd  1  [0.0,10.0]" << endl;
-  textFile << "ewkScale rateParam ch1 ewk  1  [0.0,10.0]" << endl;
-  textFile << "ttScale rateParam ch1 tt  1  [0.0,10.0]" << endl;
-  textFile << "zScale rateParam ch1 z  1  [0.0,10.0]" << endl;
+  textFile << "qcdScale rateParam ch1 qcd  1  [0.0,3.0]" << endl;
+  textFile << "ewkScale rateParam ch1 ewk  1  [0.0,3.0]" << endl;
+  textFile << "ttScale rateParam ch1 tt  1  [0.0,3.0]" << endl;
+  textFile << "zScale rateParam ch1 z  1  [0.0,3.0]" << endl;
 
   // *******************
   // end creating datacard inputs
