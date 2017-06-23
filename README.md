@@ -2,8 +2,8 @@
 scripts to evaluate data-mc differences of track isolation for NMSSM analysis (2016 data)
 
 ##########################################
-## To run the analysis and make the histograms for all sample you need to run
-## Before you will need to take care that all filelists are avalailable in the histogram folder
+### To run the analysis and make the histograms for all sample you need to run
+#### Before you will need to take care that all filelists are avalailable in the histogram folder
 cd histograms
 source runAnalysis
 
