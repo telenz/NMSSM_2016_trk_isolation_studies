@@ -1,3 +1,5 @@
-*~
-*.root
-*_files
+*
+!.gitignore
+!*.conf
+!*.sh
+!DYJetsToLL_M-50_13TeV-madgraphMLM_ZTT
