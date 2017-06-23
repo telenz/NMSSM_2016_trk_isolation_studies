@@ -115,7 +115,7 @@ void TemplateProducer(TString histName = "invMassMuTrkH", TString ptRange = "2p5
     TH1D * eventCount = (TH1D*)fileMC->Get("histWeightsH");
     float nGen = eventCount->GetSumOfWeights();
     float norm = xsec[iS]*lumi/nGen;
-    std::cout << "Sample = " << iS << "  entries = " << hist->GetSumOfWeights() << std::endl;
+    //std::cout << "Sample = " << iS << "  entries = " << hist->GetSumOfWeights() << std::endl;
 
     TH1D * tempHist = ewkHist;
     if (iS>3&&iS<9)       tempHist = ttHist;
@@ -136,19 +136,17 @@ void TemplateProducer(TString histName = "invMassMuTrkH", TString ptRange = "2p5
     TH1D * eventCount = (TH1D*)fileMC->Get("histWeightsH");
     float nGen = eventCount->GetSumOfWeights();
     float norm = xsec[iS]*lumi/nGen;
-    std::cout << "Sample = " << iS << "  entries = " << hist->GetSumOfWeights() << std::endl;
+    //std::cout << "Sample = " << iS << "  entries = " << hist->GetSumOfWeights() << std::endl;
     ssHist->Add(ssHist,hist,1.,norm);
   }
 
   qcdHist->Add(ssHist,-1);  
 
-  //  float dataEvents = 0;
-  //  float ttEvents = 0;
   std::cout << "QCD   : " << qcdHist->GetSumOfWeights() << std::endl;
   std::cout << "EWK   : " << ewkHist->GetSumOfWeights() << std::endl;
-  std::cout << "TTJ   : " << ttHist->GetSumOfWeights() << std::endl;
-  std::cout << "DY    : " << zHist->GetSumOfWeights() << std::endl;
-  std::cout << "ZTT   : " << zttHist->GetSumOfWeights() << std::endl;
+  std::cout << "TTJ   : " << ttHist->GetSumOfWeights()  << std::endl;
+  std::cout << "DY    : " << zHist->GetSumOfWeights()   << std::endl;
+  std::cout << "ZTT   : " << zttHist->GetSumOfWeights() << std::endl << std::endl;
 
 
   TFile *outFile = new TFile("templates_trk_isolation_"+ptRange+sys+".root","RECREATE");
