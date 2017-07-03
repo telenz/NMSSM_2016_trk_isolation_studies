@@ -27,3 +27,5 @@ do
 done
 
 
+# Get the results for r and other parameters:
+# fit_s->Print() with open root file mlfit...root
