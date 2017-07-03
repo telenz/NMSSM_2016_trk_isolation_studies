@@ -2,6 +2,7 @@
 #include "../plotting/HttStylesNew.cc"
 #include "TGraphErrors.h"
 #include "TF1.h"
+#include "TLatex.h"
 
 void plotAndFitScaleFactors(){
 
@@ -21,9 +22,25 @@ void plotAndFitScaleFactors(){
   g->GetYaxis()->SetRangeUser(0.5,1.0);
 
   // Make Fit
-  TF1* f1 = new TF1("f1","[0]");
-  f1->SetLineColor(kOrange);
+  TF1* f1 = new TF1("f1","[0] + x*[1]");
+  f1->SetLineColor(kRed);
   g->Fit("f1");
+
+  double chi2 = f1->GetChisquare();
+  double ndof = f1->GetNDF(); 
+
+  cout<<"chi2 = "<<chi2<<endl;
+  cout<<"ndof = "<<ndof<<endl;
+
+  TLatex latex;
+  latex.SetNDC();
+  latex.SetTextAngle(0);
+  latex.SetTextColor(kBlack);
+  latex.SetTextSize(0.041);
+  TString aux = Form("chi2 / ndof = %4.1f",chi2/ndof);
+  //TString info2 = Form("fit = %4.2f #pm %4.2f",f1->GetParameter(0),f1->GetParError(0));
+  TString info2 = Form("fit = (%4.2f #pm %4.2f) + x #upoint (%4.3f #pm %4.3f)",f1->GetParameter(0),f1->GetParError(0),f1->GetParameter(1),f1->GetParError(1));
+
   /*
   TF1* f2 = new TF1("f2","[0]*x+[1]");
   f2->SetLineColor(kBlue);
@@ -34,7 +51,8 @@ void plotAndFitScaleFactors(){
   canv1 -> cd();
 
   g->Draw("AP");
-
+  latex.DrawLatex(0.3, 0.2, aux);      
+  latex.DrawLatex(0.3, 0.27, info2);      
   
 
   canv1->SaveAs("figures/TauIsolation_ScaleFactors.pdf");
